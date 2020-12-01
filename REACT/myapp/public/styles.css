@@ -17,3 +17,10 @@ header input {
   font-size: 20px;
   margin: 20px 0;
 }
+
+.new_item {
+  background: "red";
+}
+.non-active {
+  background: "blue";
+}
