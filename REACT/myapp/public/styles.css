@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: "Roboto";
+  font-weight: bold;
 }
 
 header {
@@ -13,14 +15,27 @@ header {
   font-family: "Anton";
 }
 
+.Heading {
+  text-align: center;
+  font-family: Verdana;
+}
+
 header input {
   font-size: 20px;
   margin: 20px 0;
 }
 
 .new_item {
-  background: "red";
+  background: RGBA(200, 200, 200, 0.4);
+  font-style: italic;
+  font-size: 14px;
+  margin: 40px;
+  padding-bottom: 10px;
+  text-align: center;
 }
-.non-active {
-  background: "blue";
+.new_title {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: RGBA(120, 120, 120, 0.4);
 }
