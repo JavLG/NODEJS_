@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Card from '../HOC/card'
+import Auth from '../HOC/auth'
 
 const Profiles = (props) => {
   
@@ -11,6 +12,7 @@ const Profiles = (props) => {
 
 
   return(
+    <Auth>
     <Card>
       <h3>Profiles</h3>
       <Link to={{
@@ -22,6 +24,7 @@ const Profiles = (props) => {
       <div>Profile 3</div>
         {redir()}
     </Card>
+    </Auth>
   )
 
 }

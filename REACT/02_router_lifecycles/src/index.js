@@ -10,6 +10,7 @@ import Profiles from './components/profiles';
 import PostItem from './components/post_item';
 import Life from './components/lifecycles';
 import Conditional from './components/conditional';
+import User from './components/user';
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
       <br/>
       <NavLink to="/life" activeStyle={{color:'red'}}>Life</NavLink>
       <br/>
+      <NavLink to="/user" activeStyle={{color:'red'}}>User</NavLink>
+      <br/>
       <NavLink to={{pathname:'/profile'
                 }} activeStyle={{color:'red'}}> Profile </NavLink>
        <hr/>
@@ -36,6 +39,7 @@ const App = () => {
     <Route path="/conditional" component={Conditional} />
     <Route path="/profile" component={Profiles} />
     <Route path="/life" component={Life} />
+    <Route path="/user" component={User} />
     <Route path="/" exact component={Home} />
     <Route render={()=> <h3>Error 404</h3>} />
     </Switch>
