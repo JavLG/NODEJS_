@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import './layout.css'
-import Header from '../../components/Header/header'
+import './layout.css';
+import Header from '../../components/Header/header';
+import Footer from '../../components/Footer/footer';
+
+
 
 class Layout extends Component {
 
@@ -10,18 +13,20 @@ class Layout extends Component {
 
     togglesidenav = (action) =>
     {
-      this.setState({showNav:action})
+      this.setState({
+        showNav:action
+      })
     }
 
   render() {
     return (
       <div>
-        <Header showNave={this.state.showNav} 
+        <Header showNav={this.state.showNav} 
         onHideNav={() => this.togglesidenav(false)} 
         onOpenNav={() => this.togglesidenav(true)}
         />
         {this.props.children}
-        Footer
+        <Footer />
       </div>
     );
   }
