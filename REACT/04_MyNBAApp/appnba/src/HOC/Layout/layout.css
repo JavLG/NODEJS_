@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #813d3d;
+  margin-bottom: 8px;
+  background: #cecece;
   font-family: "Roboto", sans-serif;
 }
 
