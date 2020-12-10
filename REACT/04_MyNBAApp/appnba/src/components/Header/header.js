@@ -2,18 +2,19 @@ import React from 'react';
 import style from './header.css';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
+import SideNavigation from './SideNav/sideNav';
 
 
-
-const Header = () => {
+const Header = (props) => {
 
   const logo = () => (
-    <Link className={style.logo}><img alt="NBA Logo" src="/images/nba_logo.png"/></Link>
+    <Link to="" className={style.logo}><img alt="NBA Logo" src="/images/nba_logo.png"/></Link>
   )
 
   const navBars = () => (
     <div className={style.bars}>
-      <FontAwesome name="bars" 
+      <FontAwesome name="bars"
+      onClick={props.onOpenNav}
       style={{
         color:'#dfdfdf',
         padding:'10px',
@@ -28,6 +29,7 @@ const Header = () => {
   return (
     
       <header className={style.header}>
+        <SideNavigation {...props}/>
         <div className={style.headerOpt}>
           {navBars()}
           {logo()}
