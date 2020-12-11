@@ -6,7 +6,6 @@ import style from './slider.css';
 
 const SliderTemplates = (props) => {
 
-  console.log(props)
 
   let template = null;
 
