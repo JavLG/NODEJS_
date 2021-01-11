@@ -14,7 +14,7 @@ const VideosListTemplate = (props) => {
                         background:`url(/images/videos/${item.image})`
                     }}
                 >
-                    <div><FontAwesome name="play-circle" style={{color:'#fff',fontSize:'15px',marginLeft:'5px',marginTop:'5px'}} /></div>
+                    <div><FontAwesome name="play-circle" style={{color:'#fff',opacity:'0.5',fontSize:'40px',marginLeft:'25px',marginTop:'25px'}} /></div>
                 </div>
                 <div className={styles.right}>
                     <CardInfo teams={props.teams} team={item.team} date={item.date}/>
